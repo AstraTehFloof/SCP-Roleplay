@@ -192,7 +192,7 @@ function DarkLib:Window()
 	Glow_2.ImageTransparency = 1
 	TabHolder.Name = "TabHolder"
 	TabHolder.Parent = TabHolderFrame
-	TabHolder.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+	TabHolder.BackgroundColor3 = Color3.fromRGB(0,0,0)
 	TabHolder.BackgroundTransparency = 1.000
 	TabHolder.Size = UDim2.new(0, 519, 0, 30)
 
@@ -248,7 +248,7 @@ function DarkLib:Window()
 
 		Container.Name = "Container"
 		Container.Parent = Containers
-		Container.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+		Container.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 		Container.Position = UDim2.new(0.0251439176, 0, 0.28937912, 0)
 		Container.Size = UDim2.new(0, 519, 0, 227)
 		Container.Visible = false
