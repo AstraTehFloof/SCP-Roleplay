@@ -169,7 +169,7 @@ function DarkLib:Window()
 
 	TabHolderFrame.Name = "TabHolderFrame"
 	TabHolderFrame.Parent = MainFrame
-	TabHolderFrame.BackgroundColor3 = Color3.fromRGB(124, 136, 255)
+	TabHolderFrame.BackgroundColor3 = Color3.fromRGB(0,0,0)
 	TabHolderFrame.Position = UDim2.new(0.0251439176, 0, 0.174975574, 0)
 	TabHolderFrame.Size = UDim2.new(0, 519, 0, 31)
 
@@ -186,7 +186,7 @@ function DarkLib:Window()
 	Glow_2.Size = UDim2.new(1, 30, 1, 30)
 	Glow_2.ZIndex = 0
 	Glow_2.Image = "rbxassetid://4996891970"
-	Glow_2.ImageColor3 = Color3.fromRGB(124, 136, 255)
+	Glow_2.ImageColor3 = Color3.fromRGB(0,0,0)
 	Glow_2.ScaleType = Enum.ScaleType.Slice
 	Glow_2.SliceCenter = Rect.new(20, 20, 280, 280)
 	Glow_2.ImageTransparency = 1
@@ -215,7 +215,7 @@ function DarkLib:Window()
 	Glow_3.Size = UDim2.new(1, 30, 1, 30)
 	Glow_3.ZIndex = 0
 	Glow_3.Image = "rbxassetid://4996891970"
-	Glow_3.ImageColor3 = Color3.fromRGB(124, 136, 255)
+	Glow_3.ImageColor3 = Color3.fromRGB(0,0,0)
 	Glow_3.ScaleType = Enum.ScaleType.Slice
 	Glow_3.SliceCenter = Rect.new(20, 20, 280, 280)
     Glow_3.ImageTransparency = 1
@@ -604,13 +604,13 @@ function DarkLib:Window()
 			Dropdown.Name = "Dropdown"
 			Dropdown.Parent = ItemHolder
 			Dropdown.AnchorPoint = Vector2.new(0.5, 0.5)
-			Dropdown.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+			Dropdown.BackgroundColor3 = Color3.fromRGB(0,0,0)
 			Dropdown.Position = UDim2.new(-0.436928689, 0, 0.696994126, 0)
 			Dropdown.Size = UDim2.new(0, 491, 0, 29)
 			Dropdown.AutoButtonColor = false
 			Dropdown.Font = Enum.Font.Gotham
 			Dropdown.Text = ""
-			Dropdown.TextColor3 = Color3.fromRGB(195, 195, 195)
+			Dropdown.TextColor3 = Color3.fromRGB(255,255,255)
 			Dropdown.TextSize = 14.000
 
 			DropdownUICorner.CornerRadius = UDim.new(0, 6)
@@ -647,7 +647,7 @@ function DarkLib:Window()
 
 			DropdownFrame.Name = "DropdownFrame"
 			DropdownFrame.Parent = ItemHolder
-			DropdownFrame.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+			DropdownFrame.BackgroundColor3 = Color3.fromRGB(0,0,0)
 			DropdownFrame.Position = UDim2.new(0, 0, 0.202399909, 0)
 			DropdownFrame.Size = UDim2.new(0, 491, 0, 0)
 			DropdownFrame.ClipsDescendants = true
@@ -680,7 +680,7 @@ function DarkLib:Window()
 					TweenService:Create(
 						Dropdown,
 						TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(44, 44, 44)}
+						{BackgroundColor3 = Color3.fromRGB(30,30,30)}
 					):Play()
 				end
 			)
@@ -690,7 +690,7 @@ function DarkLib:Window()
 					TweenService:Create(
 						Dropdown,
 						TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(39, 39, 39)}
+						{BackgroundColor3 = Color3.fromRGB(0,0,0)}
 					):Play()
 				end
 			)
