@@ -26,7 +26,7 @@ ss:Toggle("Infinite ammo",function(t)
 	if t == true then 
 		for i,v in next,getgc(true)do
 			if type(v)=='table'and rawget(v,'AimFOV')then
-					while wait() do
+				while wait() do
 				v.Ammo = math.huge 
 				end
 			end
@@ -45,7 +45,9 @@ ss:Toggle("Infinite clip",function(t)
 	if t == true then 
 		for i,v in next,getgc(true)do
 			if type(v)=='table'and rawget(v,'AimFOV')then
+				while wait() do
 				v.Clip = math.huge 
+				end
 			end
 		end
 	elseif t == false then 
