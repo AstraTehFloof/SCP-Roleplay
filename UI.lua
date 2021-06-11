@@ -116,7 +116,8 @@ function Ripple(obj)
 end
 
 local DarkHubLib = Instance.new("ScreenGui")
-DarkHubLib.Name = math.random(1,52399)
+DarkHubLib.Name = "MarkBeatsIsGay"
+
 if syn and syn.protect_gui then
     syn.protect_gui(DarkHubLib)
     DarkHubLib.Parent = game.CoreGui
@@ -144,7 +145,7 @@ function DarkLib:Window()
 
 	MainFrame.Name = "MainFrame"
 	MainFrame.Parent = DarkHubLib
-	MainFrame.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+	MainFrame.BackgroundColor3 = Color3.fromRGB(124, 136, 255)
 	MainFrame.Position = UDim2.new(0.330445558, 0, 0.330043852, 0)
 	MainFrame.Size = UDim2.new(0, 547, 0, 341)
 
@@ -159,8 +160,8 @@ function DarkLib:Window()
 	Title.Position = UDim2.new(0.42778793, 0, 0.041837737, 0)
 	Title.Size = UDim2.new(0, 78, 0, 30)
 	Title.Font = Enum.Font.Gotham
-	Title.Text = "Dark Hub"
-	Title.TextColor3 = Color3.fromRGB(168, 168, 168)
+	Title.Text = "SCP Roleplay Hub"
+	Title.TextColor3 = Color3.fromRGB(0, 0, 0)
 	Title.TextSize = 20.000
 
 	Containers.Name = "Containers"
