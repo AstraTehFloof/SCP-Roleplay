@@ -26,12 +26,15 @@ ss:Toggle("Infinite ammo",function(t)
 	if t == true then 
 		for i,v in next,getgc(true)do
 			if type(v)=='table'and rawget(v,'AimFOV')then
+					while wait() do
 				v.Ammo = math.huge 
+				end
 			end
 		end
 	elseif t == false then 
 		for i,v in next,getgc(true)do
 			if type(v)=='table'and rawget(v,'AimFOV')then
+				
 				v.Ammo = 5000 
 			end
 		end
