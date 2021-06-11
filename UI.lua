@@ -1,18 +1,18 @@
 if game.CoreGui:FindFirstChild("MarkBeatsIsGay") then
-    game.CoreGui.MarkBeatsIsGay:Destroy()
+	game.CoreGui.MarkBeatsIsGay:Destroy()
 end
 game:GetService("UserInputService").InputBegan:connect(
-    function(key, gpe)
-        if key.KeyCode == Enum.KeyCode.RightControl then
-            pcall(
-                function()
-                    for i, v in pairs(game.CoreGui.MarkBeatsIsGay:GetChildren()) do
-                        v.Visible = not v.Visible
-                    end
-                end
-            )
-        end
-    end
+function(key, gpe)
+	if key.KeyCode == Enum.KeyCode.RightControl then
+		pcall(
+			function()
+				for i, v in pairs(game.CoreGui.MarkBeatsIsGay:GetChildren()) do
+					v.Visible = not v.Visible
+				end
+			end
+		)
+	end
+end
 )
 
 local DarkLib = {RainbowColorValue = 0, HueSelectionPosition = 0}
@@ -40,39 +40,39 @@ coroutine.wrap(
 )()
 
 local function MakeDraggable(topbarobject, object) 
-    pcall(
-        function()
-    local dragging = false
-    local dragInput, mousePos, framePos
+	pcall(
+		function()
+			local dragging = false
+			local dragInput, mousePos, framePos
 
-    topbarobject.InputBegan:Connect(function(input)
-        if input.UserInputType == Enum.UserInputType.MouseButton1 then
-            dragging = true
-            mousePos = input.Position
-            framePos = object.Position
-            
-            input.Changed:Connect(function()
-                if input.UserInputState == Enum.UserInputState.End then
-                    dragging = false
-                end
-            end)
-        end
-    end)
+			topbarobject.InputBegan:Connect(function(input)
+				if input.UserInputType == Enum.UserInputType.MouseButton1 then
+					dragging = true
+					mousePos = input.Position
+					framePos = object.Position
 
-    topbarobject.InputChanged:Connect(function(input)
-        if input.UserInputType == Enum.UserInputType.MouseMovement then
-            dragInput = input
-        end
-    end)
+					input.Changed:Connect(function()
+						if input.UserInputState == Enum.UserInputState.End then
+							dragging = false
+						end
+					end)
+				end
+			end)
 
-    UserInputService.InputChanged:Connect(function(input)
-        if input == dragInput and dragging then
-            local delta = input.Position - mousePos
-            object.Position  = UDim2.new(framePos.X.Scale, framePos.X.Offset + delta.X, framePos.Y.Scale, framePos.Y.Offset + delta.Y)
-        end
-    end)
-end
-)
+			topbarobject.InputChanged:Connect(function(input)
+				if input.UserInputType == Enum.UserInputType.MouseMovement then
+					dragInput = input
+				end
+			end)
+
+			UserInputService.InputChanged:Connect(function(input)
+				if input == dragInput and dragging then
+					local delta = input.Position - mousePos
+					object.Position  = UDim2.new(framePos.X.Scale, framePos.X.Offset + delta.X, framePos.Y.Scale, framePos.Y.Offset + delta.Y)
+				end
+			end)
+		end
+	)
 end
 
 function Ripple(obj)
@@ -119,12 +119,12 @@ local DarkHubLib = Instance.new("ScreenGui")
 DarkHubLib.Name = "MarkBeatsIsGay"
 
 if syn and syn.protect_gui then
-    syn.protect_gui(DarkHubLib)
-    DarkHubLib.Parent = game.CoreGui
+	syn.protect_gui(DarkHubLib)
+	DarkHubLib.Parent = game.CoreGui
 elseif hiddenUI then
-    DarkHubLib.Parent = hiddenUI()
+	DarkHubLib.Parent = hiddenUI()
 else
-    DarkHubLib.Parent = game.CoreGui
+	DarkHubLib.Parent = game.CoreGui
 end
 DarkHubLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
@@ -218,7 +218,7 @@ function DarkLib:Window()
 	Glow_3.ImageColor3 = Color3.fromRGB(0,0,0)
 	Glow_3.ScaleType = Enum.ScaleType.Slice
 	Glow_3.SliceCenter = Rect.new(20, 20, 280, 280)
-    Glow_3.ImageTransparency = 1
+	Glow_3.ImageTransparency = 1
 	DraggableFrame.Parent = MainFrame
 	DraggableFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	DraggableFrame.BackgroundTransparency = 1.000
@@ -327,7 +327,7 @@ function DarkLib:Window()
 
 			Button.Name = "Button"
 			Button.Parent = ItemHolder
-			Button.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+			Button.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 			Button.Position = UDim2.new(0, 0, 0.174999997, 0)
 			Button.Size = UDim2.new(0, 491, 0, 29)
 			Button.AutoButtonColor = false
@@ -393,7 +393,7 @@ function DarkLib:Window()
 			Toggle.Name = "Toggle"
 			Toggle.Parent = ItemHolder
 			Toggle.AnchorPoint = Vector2.new(0.5, 0.5)
-			Toggle.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+			Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 			Toggle.Position = UDim2.new(-0.436928689, 0, 0.696994126, 0)
 			Toggle.Size = UDim2.new(0, 491, 0, 29)
 			Toggle.AutoButtonColor = false
@@ -489,7 +489,7 @@ function DarkLib:Window()
 			Slider.Name = "Slider"
 			Slider.Parent = ItemHolder
 			Slider.AnchorPoint = Vector2.new(0.5, 0.5)
-			Slider.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+			Slider.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 			Slider.Position = UDim2.new(-0.0217271745, 0, 1.37144423, 0)
 			Slider.Size = UDim2.new(0, 491, 0, 37)
 			Slider.AutoButtonColor = false
@@ -774,7 +774,7 @@ function DarkLib:Window()
 				Option.Name = "Option"
 				Option.Parent = DropItemHolder
 				Option.AnchorPoint = Vector2.new(0.5, 0.5)
-				Option.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+				Option.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 				Option.Position = UDim2.new(0.494680852, 0, 0.147959188, 0)
 				Option.Size = UDim2.new(0, 465, 0, 25)
 				Option.AutoButtonColor = false
@@ -877,7 +877,7 @@ function DarkLib:Window()
 			Colorpicker.Name = "Colorpicker"
 			Colorpicker.Parent = ItemHolder
 			Colorpicker.AnchorPoint = Vector2.new(0.5, 0.5)
-			Colorpicker.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+			Colorpicker.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 			Colorpicker.Position = UDim2.new(-0.436928689, 0, 0.696994126, 0)
 			Colorpicker.Size = UDim2.new(0, 491, 0, 29)
 			Colorpicker.AutoButtonColor = false
@@ -930,7 +930,7 @@ function DarkLib:Window()
 
 			ColorpickerFrame.Name = "ColorpickerFrame"
 			ColorpickerFrame.Parent = ItemHolder
-			ColorpickerFrame.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+			ColorpickerFrame.BackgroundColor3 = Color3.fromRGB(0,0,0)
 			ColorpickerFrame.Position = UDim2.new(0.0457920805, 0, 0.685394764, 0)
 			ColorpickerFrame.Size = UDim2.new(0, 491, 0, 0)
 			ColorpickerFrame.Visible = false
@@ -998,7 +998,7 @@ function DarkLib:Window()
 			Confirm.Name = "Confirm"
 			Confirm.Parent = ColorpickerFrame
 			Confirm.AnchorPoint = Vector2.new(0.5, 0.5)
-			Confirm.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+			Confirm.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 			Confirm.Position = UDim2.new(0.760692477, 0, 0.211035922, 0)
 			Confirm.Size = UDim2.new(0, 212, 0, 29)
 			Confirm.AutoButtonColor = false
@@ -1289,7 +1289,7 @@ function DarkLib:Window()
 			Textbox.Name = "Textbox"
 			Textbox.Parent = ItemHolder
 			Textbox.AnchorPoint = Vector2.new(0.5, 0.5)
-			Textbox.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+			Textbox.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 			Textbox.Position = UDim2.new(-0.0217271745, 0, 1.37144423, 0)
 			Textbox.Size = UDim2.new(0, 491, 0, 37)
 			Textbox.AutoButtonColor = false
@@ -1375,7 +1375,7 @@ function DarkLib:Window()
 			Bind.Name = "Bind"
 			Bind.Parent = ItemHolder
 			Bind.AnchorPoint = Vector2.new(0.5, 0.5)
-			Bind.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+			Bind.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 			Bind.Position = UDim2.new(-0.436928689, 0, 0.696994126, 0)
 			Bind.Size = UDim2.new(0, 491, 0, 29)
 			Bind.AutoButtonColor = false
@@ -1469,7 +1469,7 @@ function DarkLib:Window()
 
 			Label.Name = "Label"
 			Label.Parent = ItemHolder
-			Label.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+			Label.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 			Label.Position = UDim2.new(0, 0, 0.174999997, 0)
 			Label.Size = UDim2.new(0, 491, 0, 29)
 			Label.AutoButtonColor = false
