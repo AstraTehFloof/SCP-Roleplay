@@ -208,7 +208,7 @@ function DarkLib:Window()
 
 	Glow_3.Name = "Glow"
 	Glow_3.Parent = MainFrame
-	Glow_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Glow_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 	Glow_3.BackgroundTransparency = 1.000
 	Glow_3.BorderSizePixel = 0
 	Glow_3.Position = UDim2.new(0, -15, 0, -15)
@@ -356,7 +356,7 @@ function DarkLib:Window()
 					TweenService:Create(
 						Button,
 						TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(39, 39, 39)}
+						{BackgroundColor3 = Color3.fromRGB(0, 0, 0)}
 					):Play()
 				end
 			)
@@ -444,7 +444,7 @@ function DarkLib:Window()
 					TweenService:Create(
 						Toggle,
 						TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(39, 39, 39)}
+						{BackgroundColor3 = Color3.fromRGB(0, 0, 0)}
 					):Play()
 				end
 			)
@@ -809,7 +809,7 @@ function DarkLib:Window()
 						TweenService:Create(
 							Option,
 							TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-							{BackgroundColor3 = Color3.fromRGB(39, 39, 39)}
+							{BackgroundColor3 = Color3.fromRGB(0, 0, 0)}
 						):Play()
 					end
 				)
@@ -1435,7 +1435,7 @@ function DarkLib:Window()
 					TweenService:Create(
 						Bind,
 						TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(39, 39, 39)}
+						{BackgroundColor3 = Color3.fromRGB(0, 0, 0)}
 					):Play()
 				end
 			)
