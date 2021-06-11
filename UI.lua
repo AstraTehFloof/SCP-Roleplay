@@ -116,7 +116,7 @@ function Ripple(obj)
 end
 
 local DarkHubLib = Instance.new("ScreenGui")
-DarkHubLib.Name = "MarkBeatsIsGay"
+DarkHubLib.Name = math.random(1,52399)
 if syn and syn.protect_gui then
     syn.protect_gui(DarkHubLib)
     DarkHubLib.Parent = game.CoreGui
