@@ -9,7 +9,7 @@ game.StarterGui:SetCore("SendNotification", {
 })
 
 
-DarkLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/NewUI"))()
+DarkLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/AstraTehFloof/SCP-Roleplay/main/Darkhub%20UI.txt"))()
 
 local s = DarkLib:Window()
 
