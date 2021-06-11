@@ -169,7 +169,7 @@ function DarkLib:Window()
 
 	TabHolderFrame.Name = "TabHolderFrame"
 	TabHolderFrame.Parent = MainFrame
-	TabHolderFrame.BackgroundColor3 = Color3.fromRGB(33, 33, 33)
+	TabHolderFrame.BackgroundColor3 = Color3.fromRGB(124, 136, 255)
 	TabHolderFrame.Position = UDim2.new(0.0251439176, 0, 0.174975574, 0)
 	TabHolderFrame.Size = UDim2.new(0, 519, 0, 31)
 
@@ -186,7 +186,7 @@ function DarkLib:Window()
 	Glow_2.Size = UDim2.new(1, 30, 1, 30)
 	Glow_2.ZIndex = 0
 	Glow_2.Image = "rbxassetid://4996891970"
-	Glow_2.ImageColor3 = Color3.fromRGB(15, 15, 15)
+	Glow_2.ImageColor3 = Color3.fromRGB(124, 136, 255)
 	Glow_2.ScaleType = Enum.ScaleType.Slice
 	Glow_2.SliceCenter = Rect.new(20, 20, 280, 280)
 	Glow_2.ImageTransparency = 1
@@ -215,7 +215,7 @@ function DarkLib:Window()
 	Glow_3.Size = UDim2.new(1, 30, 1, 30)
 	Glow_3.ZIndex = 0
 	Glow_3.Image = "rbxassetid://4996891970"
-	Glow_3.ImageColor3 = Color3.fromRGB(15, 15, 15)
+	Glow_3.ImageColor3 = Color3.fromRGB(124, 136, 255)
 	Glow_3.ScaleType = Enum.ScaleType.Slice
 	Glow_3.SliceCenter = Rect.new(20, 20, 280, 280)
     Glow_3.ImageTransparency = 1
